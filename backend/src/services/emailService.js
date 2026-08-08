@@ -8,7 +8,7 @@ import { Resend } from 'resend';
 import 'dotenv/config';
 
 const resendApiKey = process.env.RESEND_API_KEY;
-const notifyEmail = process.env.NOTIFY_EMAIL || 'nandansharma94439@gmail.com';
+const notifyEmail = process.env.NOTIFY_EMAIL;
 
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
