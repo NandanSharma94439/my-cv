@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =============================================
+         SEO & META — REPLACE ALL PLACEHOLDER VALUES
+         ============================================= -->
+    <title><!-- Nandan Sharma --> | <!-- Web Developer --></title>
+    <meta name="description"
+        content="Portfolio of <!-- Nandan Shamra -->, a passionate <!-- Web Developer --> building cross-platform applications.">
+    <meta name="keywords" content="Flutter, Developer, Firebase, Mobile App, Portfolio, <!-- Nandan Sharma -->">
+    <meta name="author" content="<!-- Nandan Sharma -->">
+    <meta name="theme-color" content="#6366F1">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="<!-- Nandan Sharma --> | <!-- Web Developer -->">
+    <meta property="og:description"
+        content="Building beautiful cross-platform applications using Flutter and Firebase.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<!-- YOUR_PORTFOLIO_URL -->">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Nandan Sharma",
+      "jobTitle": "Mobile App Developer | Full Stack Developer | Video Editor",
+      "url": "YOUR_PORTFOLIO_URL"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Vercel Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body>
+
+    <!-- ==================== PARTICLE CANVAS ==================== -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ==================== LOADER ==================== -->
+    <div id="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">Welcome to my Portifolio<span>.</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar" aria-label="Main Navigation">
+        <div class="container nav-container">
+            <!-- REPLACE "YourName" WITH YOUR FIRST NAME -->
+            <a href="#home" class="logo" aria-label="Home">Nandan Sharma<span>.</span></a>
+            <ul class="nav-links" role="list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- REPLACE href="#" WITH YOUR RESUME PDF LINK -->
+            <a href="cv.html" target="_blank" class="btn btn-outline nav-btn ripple" aria-label="Download Resume">
+                Resume <i class='bx bx-download'></i>
+            </a>
+            <button class="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <header id="home" class="hero section" aria-label="Introduction">
+        <div class="container hero-container grid-2">
+            <div class="hero-content reveal-left">
+                <p class="subtitle">
+                    <span class="status-dot"></span> Available for work
+                </p>
+                <!-- REPLACE WITH YOUR FULL NAME -->
+                <h1 class="title">Nandan Sharma</h1>
+                <h2 class="typing-text">I build <span class="typed"></span><span class="cursor-blink">|</span></h2>
+                <!-- REPLACE WITH YOUR HERO DESCRIPTION -->
+                <p class="description">Building beautiful, performant cross-platform applications using Flutter,
+                    Firebase, and modern frontend technologies.</p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary ripple">
+                        Hire Me <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <!-- REPLACE href="#" WITH YOUR RESUME PDF LINK -->
+                    <a href="cv.html" target="_blank" class="btn btn-secondary ripple">
+                        Download CV <i class='bx bx-download'></i>
+                    </a>
+                </div>
+
+                <div class="social-icons">
+                    <!-- REPLACE href="#" WITH YOUR GITHUB URL -->
+                    <a href="https://github.com/NandanSharma94439" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub Profile">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <!-- REPLACE href="#" WITH YOUR LINKEDIN URL -->
+                    <a href="https://www.linkedin.com/in/nandan-sharma-0b503134a" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <!-- REPLACE href="#" WITH YOUR TWITTER URL OR REMOVE THIS BLOCK -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image reveal-right">
+                <div class="image-wrapper tilt-element">
+                    <div class="hex-glow"></div>
+                    <img src="assets/images/profile image.jpeg" alt="Nandan Sharma Profile Picture"
+                        class="hero-profile-img" loading="eager">
+                    <div class="floating-badge badge-1" aria-label="Java"><i class='bx bxl-java'></i></div>
+                    <div class="floating-badge badge-2" aria-label="Firebase"><i class='bx bxl-firebase'></i></div>
+                    <div class="floating-badge badge-3" aria-label="JavaScript"><i class='bx bxl-javascript'></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </a>
+    </header>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container reveal-up">
+            <h2 class="section-title" id="about-title">About <span>Me</span></h2>
+            <div class="grid-2 about-content">
+                <div class="glass-card about-text tilt-element">
+                    <div class="about-tag">Professional Summary</div>
+                    <!-- REPLACE WITH YOUR OWN HEADLINE -->
+                    <h3>Building Practical Software Through Continuous Learning</h3>
+                    <!-- REPLACE WITH YOUR OWN PARAGRAPHS -->
+                    <p>I am a Computer Science student and software developer passionate about
+                        building modern web applications, Android apps, and practical software solutions.
+                        I enjoy transforming ideas into clean, responsive, and user-friendly digital
+                        experiences while continuously learning new technologies.</p>
+                    <div class="about-cta">
+                        <!-- REPLACE href="#" WITH YOUR RESUME PDF LINK -->
+                        <a href="cv.html" target="_blank" class="btn btn-primary ripple">
+                            Download Resume <i class='bx bx-download'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-stats grid-2">
+                    <!-- REPLACE data-target="0" WITH YOUR ACTUAL PROJECT COUNT -->
+                    <div class="glass-card stat-card">
+                        <i class='bx bx-code-alt' aria-hidden="true"></i>
+                        <h4 class="counter" data-target="10">10</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <!-- REPLACE data-target="0" WITH YOUR ACTUAL CLIENT COUNT -->
+                    <div class="glass-card stat-card">
+                        <i class='bx bx-user-check' aria-hidden="true"></i>
+                        <!-- <h4 class="counter" data-target="0">0</h4> -->
+                        <h4>
+                            <p>Getting Started</p>
+                        </h4>
+                    </div>
+                    <!-- REPLACE data-target="0" WITH YOUR ACTUAL PUBLISHED APPS COUNT -->
+                    <div class="glass-card stat-card">
+                        <i class='bx bx-store-alt' aria-hidden="true"></i>
+                        <h4 class="counter" data-target="1">1</h4>
+                        <p>App Published</p>
+                    </div>
+                    <!-- REPLACE data-target="0" WITH YOUR YEARS OF EXPERIENCE -->
+                    <div class="glass-card stat-card">
+                        <i class='bx bx-calendar-star' aria-hidden="true"></i>
+                        <h4 class="counter" data-target="1">1</h4>
+                        <p>Year Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="container reveal-up">
+            <h2 class="section-title" id="skills-title">My <span>Skills</span></h2>
+            <div class="skills-grid">
+
+                <!-- CARD 1: LANGUAGES -->
+                <div class="glass-card skill-category tilt-element">
+                    <div class="skill-cat-icon"><i class='bx bx-code'></i></div>
+                    <h3>Languages</h3>
+                    <div class="skill">
+                        <div class="skill-info"><span>JavaScript</span><span>90%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Java</span><span>85%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>HTML / CSS</span><span>90%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Kotlin</span><span>80%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Python</span><span>75%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2: BACKEND & DATABASES -->
+                <div class="glass-card skill-category tilt-element">
+                    <div class="skill-cat-icon"><i class='bx bx-server'></i></div>
+                    <h3>Backend &amp; Databases</h3>
+                    <div class="skill">
+                        <div class="skill-info"><span>REST APIs</span><span>90%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Node.js &amp; Express.js</span><span>85%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Firebase</span><span>85%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>PostgreSQL</span><span>80%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>SQL / SQLite</span><span>80%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Supabase</span><span>75%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3: TOOLS & WORKFLOW -->
+                <div class="glass-card skill-category tilt-element">
+                    <div class="skill-cat-icon"><i class='bx bx-wrench'></i></div>
+                    <h3>Tools &amp; Workflow</h3>
+                    <div class="skill">
+                        <div class="skill-info"><span>VS Code</span><span>95%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Android Studio</span><span>90%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Git &amp; GitHub</span><span>85%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Postman</span><span>80%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Figma</span><span>70%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4: CREATIVE SUITE -->
+                <div class="glass-card skill-category tilt-element">
+                    <div class="skill-cat-icon"><i class='bx bx-palette'></i></div>
+                    <h3>Creative Suite</h3>
+                    <div class="skill">
+                        <div class="skill-info"><span>Adobe Photoshop 2026</span><span>85%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>DaVinci Resolve</span><span>85%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info"><span>Adobe Lightroom</span><span>80%</span></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="container reveal-up">
+            <h2 class="section-title" id="projects-title">Featured <span>Projects</span></h2>
+
+            <!--
+            <div class="filter-btns" role="group" aria-label="Project filter">
+                <button class="filter-btn active ripple" data-filter="all">All</button>
+                <button class="filter-btn ripple" data-filter="app">Mobile Apps</button>
+                <button class="filter-btn ripple" data-filter="web">Web</button>
+            </div>
+            -->
+
+            <div class="project-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="glass-card project-card tilt-element" data-category="app">
+                    <div class="project-img">
+                        <img src="assets/images/calorimeter-app.png" alt="Calorimeter Android App Screenshot"
+                            loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.nandan.calorimeterapp&pcampaignid=web_share"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Calorimeter Live Demo">
+                                    <i class='bx bx-link-external' aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/NandanSharma94439/calorimeter_app" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Calorimeter GitHub Repository">
+                                    <i class='bx bxl-github' aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-category-badge">Mobile App</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Calorimeter</h3>
+                        <p>A modern Android nutrition tracking application featuring barcode scanning, calorie tracking,
+                            nutritional analysis, secure authentication, and a scalable backend powered by Firebase and
+                            REST APIs.</p>
+                        <div class="tech-stack">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>Firebase</span>
+                            <span>Node.js</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2 -->
+                <article class="glass-card project-card tilt-element" data-category="web">
+                    <div class="project-img">
+                        <img src="assets/images/MK_portifolio.png" alt="MK Portfolio Website Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://mk-portofolio.onrender.com/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="MK Portfolio Live Demo">
+                                    <i class='bx bx-link-external' aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/NandanSharma94439/portofolio-website" target="_blank"
+                                    rel="noopener noreferrer" aria-label="MK Portfolio GitHub Repository">
+                                    <i class='bx bxl-github' aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-category-badge">Web</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>MK Portfolio</h3>
+                        <p>A premium portfolio website developed for a professional trader featuring modern UI,
+                            glassmorphism, responsive layouts, SEO optimization, and smooth interactive animations.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3 -->
+                <article class="glass-card project-card tilt-element" data-category="web">
+                    <div class="project-img">
+                        <img src="assets/images/myPortifolio.png" alt="Personal Portfolio Screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Personal Portfolio Live Demo">
+                                    <i class='bx bx-link-external' aria-hidden="true"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Personal Portfolio GitHub Repository">
+                                    <i class='bx bxl-github' aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-category-badge">Web</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>My personal developer portfolio showcasing projects, technical skills, development journey,
+                            responsive design, accessibility, and interactive user experiences.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 4 (COMING SOON) -->
+                <article class="glass-card project-card tilt-element" data-category="coming-soon">
+                    <div class="project-img">
+                        <img src="assets/images/projects/comingsoon.webp" alt="Next Project Coming Soon" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <span class="building-badge" aria-label="Currently Building">🚧 Currently
+                                    Building</span>
+                            </div>
+                        </div>
+                        <div class="project-category-badge">Coming Soon</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Next Project</h3>
+                        <p>I'm currently building my next real-world software project. It will be added here as soon as
+                            development is complete.</p>
+                        <div class="tech-stack">
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services" class="section" aria-labelledby="services-title">
+        <div class="container reveal-up">
+            <h2 class="section-title" id="services-title">My <span>Services</span></h2>
+            <!-- REPLACE service titles, descriptions, and icons with your own offerings -->
+            <div class="services-grid">
+                <div class="glass-card service-card tilt-element">
+                    <div class="service-icon-wrap"><i class='bx bx-mobile-alt'></i></div>
+                    <h3>Flutter App Development</h3>
+                    <p>High-performance, cross-platform mobile apps for iOS and Android from a single codebase.</p>
+                </div>
+                <div class="glass-card service-card tilt-element">
+                    <div class="service-icon-wrap"><i class='bx bxl-firebase'></i></div>
+                    <h3>Firebase Integration</h3>
+                    <p>Robust backend solutions including Authentication, Firestore, Storage, and Push Notifications.
+                    </p>
+                </div>
+                <div class="glass-card service-card tilt-element">
+                    <div class="service-icon-wrap"><i class='bx bx-cloud-download'></i></div>
+                    <h3>REST API Integration</h3>
+                    <p>Seamlessly connecting your frontend with third-party APIs and custom backend architectures.</p>
+                </div>
+                <div class="glass-card service-card tilt-element">
+                    <div class="service-icon-wrap"><i class='bx bx-bug'></i></div>
+                    <h3>Bug Fixing &amp; Optimization</h3>
+                    <p>Auditing codebases, optimizing performance, and resolving complex structural bugs.</p>
+                </div>
+                <div class="glass-card service-card tilt-element">
+                    <div class="service-icon-wrap"><i class='bx bxl-play-store'></i></div>
+                    <h3>Play Store Deployment</h3>
+                    <p>Managing certificates, signing, and deploying applications directly to Google Play and App Store.
+                    </p>
+                </div>
+                <div class="glass-card service-card tilt-element">
+                    <div class="service-icon-wrap"><i class='bx bx-paint'></i></div>
+                    <h3>UI Implementation</h3>
+                    <p>Translating complex Figma and Adobe XD designs into pixel-perfect Flutter widgets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="container reveal-up">
+
+            <h2 class="section-title" id="experience-title">
+                Developer <span>Journey</span>
+            </h2>
+
+            <div class="timeline">
+
+                <!-- Journey 1 -->
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <h3>The Beginning</h3>
+                        <span class="date">2022</span>
+                        <p>
+                            Started my programming journey by learning the fundamentals of C, C++, Java, and Python.
+                            Developed a strong understanding of problem-solving, algorithms, and software development
+                            while exploring different areas of technology.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Journey 2 -->
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <h3>Building Real Projects</h3>
+                        <span class="date">2023</span>
+                        <p>
+                            Transitioned from learning concepts to creating real-world applications, including
+                            responsive websites, UI-focused projects, and Android applications. Improved my skills in
+                            modern web technologies and user experience design.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Journey 3 -->
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <h3>Expanding into Full-Stack Development</h3>
+                        <span class="date">2024</span>
+                        <p>
+                            Began developing complete software solutions using modern frontend and backend technologies.
+                            Worked with APIs, databases, authentication systems, Firebase, and scalable application
+                            architectures while continuously improving development workflows.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Journey 4 -->
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <h3>Building the Future</h3>
+                        <span class="date">2025 – Present</span>
+                        <p>
+                            Continuously expanding my expertise in full-stack web development, Android application
+                            development, and AI-powered solutions. Focused on delivering high-quality digital
+                            experiences, solving real-world problems, and creating products that combine clean design
+                            with scalable engineering.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container reveal-up">
+            <h2 class="section-title" id="contact-title">Get In <span>Touch</span></h2>
+            <div class="grid-2 contact-wrapper">
+
+                <div class="contact-info glass-card tilt-element">
+                    <h3>Let's build something amazing together!</h3>
+                    <p>Have a project in mind or just want to say hi? My inbox is always open. 👋</p>
+                    <div class="contact-details">
+                        <div class="item">
+                            <i class='bx bx-envelope' aria-hidden="true"></i>
+                            <!-- REPLACE your-email@example.com WITH YOUR EMAIL -->
+                            <a href="nandansharma09677@gmail.com">nandansharma09677@gmail.com</a>
+                        </div>
+                        <div class="item">
+                            <i class='bx bx-map' aria-hidden="true"></i>
+                            <!-- REPLACE WITH YOUR CITY, COUNTRY OR "Remote / Global" -->
+                            <span>Jammu,India</span>
+                        </div>
+                        <div class="item">
+                            <i class='bx bxl-whatsapp' aria-hidden="true"></i>
+                            <!-- REPLACE https://wa.me/YOURNUMBER WITH YOUR WHATSAPP LINK -->
+                            <a href="https://wa.me/919103674788" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <!-- REPLACE ALL href="#" WITH ACTUAL SOCIAL LINKS -->
+                        <a href="https://github.com/NandanSharma94439" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/nandan-sharma-0b503134a" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="glass-card contact-form" novalidate>
+                    <div class="input-group">
+                        <input type="text" id="name" required autocomplete="name" aria-label="Your Name">
+                        <label for="name">Your Name</label>
+                        <div class="error-text" role="alert">Please enter your name</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required autocomplete="email" aria-label="Email Address">
+                        <label for="email">Email Address</label>
+                        <div class="error-text" role="alert">Please enter a valid email</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="subject" required aria-label="Subject">
+                        <label for="subject">Subject</label>
+                        <div class="error-text" role="alert">Please enter a subject</div>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="5" required aria-label="Message"></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="error-text" role="alert">Message cannot be empty</div>
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn btn-primary ripple w-100">
+                        Send Message <i class='bx bx-send'></i>
+                    </button>
+                    <div class="form-success" role="status" aria-live="polite">
+                        <i class='bx bx-check-circle'></i> Message sent successfully!
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer role="contentinfo">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <!-- REPLACE "YourName" WITH YOUR FIRST NAME -->
+                <a href="#home" class="logo" aria-label="Back to top">Nandan Sharma<span>.</span></a>
+                <p>Building digital products, brands, and experiences that matter.</p>
+                <div class="social-icons" style="margin-top: 1.5rem;">
+                    <!-- REPLACE ALL href="#" WITH ACTUAL SOCIAL LINKS -->
+                    <a href="https://github.com/NandanSharma94439" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/nandan-sharma-0b503134a" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul role="list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <!-- REPLACE WITH YOUR EMAIL -->
+                <p><i class='bx bx-envelope'></i> nandansharma09677@gmail.com</p>
+                <!-- REPLACE WITH YOUR LOCATION -->
+                <p><i class='bx bx-map'></i> Jammu, India</p>
+                <!-- REPLACE href="#" WITH YOUR RESUME PDF LINK -->
+                <a href="cv.html" target="_blank" class="btn btn-outline" style="margin-top:1.5rem">
+                    Resume <i class='bx bx-download'></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <!-- REPLACE "Your Name" WITH YOUR FULL NAME -->
+            <p>&copy; <span id="year"></span> Nandan Sharma. All rights reserved. Built with ❤️</p>
+        </div>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
